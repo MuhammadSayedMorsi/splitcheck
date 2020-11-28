@@ -1,11 +1,10 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 // grab bootstrap__library
 import "bootstrap/dist/css/bootstrap.min.css";
-
-// error-meassage
-import Error from "../components/Error/Error";
-import Header from "../components/Header/Header";
+import BHeader from "../components/Header/BusinessHeader";
+import Error from "../components/error/Error";
+// import styled from "styled-components"
 
 export default function Home() {
   return (
@@ -14,7 +13,7 @@ export default function Home() {
         <title>SplitCheck-Cms</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <BHeader />
       <main className="container">
         <Error />
       </main>
